@@ -556,7 +556,7 @@ export default function Portfolio() {
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 md:mb-8">
-            Let's Build Something
+            Let&apos;s Build Something
           </h2>
           <p className="text-lg md:text-xl text-gray-300 mb-8 md:mb-12 leading-relaxed px-4">
             Always interested in discussing innovative projects, new
