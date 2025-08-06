@@ -330,14 +330,14 @@ export default function Portfolio() {
         </div>
 
         {/* Scroll indicator */}
-        <div
+        {/* <div
           onClick={() => scrollToSection("work")}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer hover:scale-110 transition-transform"
         >
           <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-white/50 rounded-full mt-2"></div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Experience Section */}
@@ -473,7 +473,7 @@ export default function Portfolio() {
               <CardContent className="p-4 md:p-8">
                 <div className="flex items-center justify-between mb-4 md:mb-6">
                   <h3 className="text-lg md:text-2xl font-bold text-white">
-                    AI Curriculum Planner
+                    OpportunityEDU
                   </h3>
                   <Badge className="bg-yellow-500/20 text-yellow-400 border-yellow-500/30 text-xs md:text-sm">
                     <Trophy className="w-3 h-3 mr-1" />
