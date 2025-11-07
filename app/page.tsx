@@ -144,9 +144,18 @@ export default function Portfolio() {
         "Built high-throughput Kafka consumers and producers for real-time fraud detection systems.",
     },
     {
+      company: "Snap Inc.",
+      role: "Software Engineering Intern",
+      period: "Sep 2024 – Dec 2024",
+      location: "Remote",
+      highlights: ["AR/VR development", "20% latency reduction", "Lens Studio"],
+      description:
+        "Built interactive AR lenses and backend APIs for Lens Studio, cutting latency by 20% through event-driven pipelines and real-time state sync.",
+    },
+    {
       company: "Paws AI",
       role: "Software Engineering Intern",
-      period: "Jan 2025 – Jul 2025",
+      period: "Sep 2023 – Dec 2024",
       location: "Columbus, OH",
       highlights: [
         "10 clinics deployed",
@@ -157,35 +166,13 @@ export default function Portfolio() {
         "Engineered scalable backend services and deployed across multiple clinical operations.",
     },
     {
-      company: "Snap Inc.",
-      role: "Software Engineering Extern",
-      period: "Sep 2024 – Nov 2024",
-      location: "Remote",
-      highlights: ["AR/VR development", "20% latency reduction", "Lens Studio"],
-      description:
-        "Created interactive AR lenses with dynamic animations and gesture controls.",
-    },
-    {
-      company: "DRB Systems LLC",
+      company: "Vontier",
       role: "Software Engineering Intern",
-      period: "May 2024 – Aug 2024",
+      period: "May 2023 – Aug 2023",
       location: "Akron, OH",
       highlights: ["CI/CD pipelines", "25% faster delivery", "Docker & AWS"],
       description:
         "Built automated deployment pipelines and containerized applications.",
-    },
-    {
-      company: "Fee Dodger LLC",
-      role: "Software Engineering Intern",
-      period: "Nov 2023 – Aug 2024",
-      location: "Remote",
-      highlights: [
-        "RESTful APIs with Node.js",
-        "Stripe payment processing",
-        "Scalable authentication",
-      ],
-      description:
-        "Built scalable RESTful APIs and implemented Stripe payment processing.",
     },
   ];
 
@@ -268,7 +255,7 @@ export default function Portfolio() {
               </div>
               <div className="text-green-400 mt-4">$ ls achievements/</div>
               <div className="text-white mt-2 text-xs md:text-sm">
-                jpmorgan_intern.txt snapchat_extern.log hackathon_winner.yml
+                jpmorgan_intern.txt snapchat_intern.log hackathon_winner.yml
               </div>
             </div>
           </div>
@@ -319,7 +306,7 @@ export default function Portfolio() {
             </Button>
             <Button
               onClick={() =>
-                (window.location.href = "mailto:uzairbeg11@gmail.com")
+                (window.location.href = "mailto:uzairmbeg15@gmail.com")
               }
               className="bg-white text-black hover:bg-gray-200 font-semibold px-6 md:px-8 py-3 relative z-10 w-full md:w-auto"
             >
@@ -572,7 +559,7 @@ export default function Portfolio() {
                   Email
                 </h3>
                 <p className="text-gray-400 text-xs md:text-sm">
-                  uzairbeg11@gmail.com
+                  uzairmbeg15@gmail.com
                 </p>
               </CardContent>
             </Card>
@@ -583,7 +570,7 @@ export default function Portfolio() {
                 <h3 className="font-semibold mb-2 text-sm md:text-base">
                   Phone
                 </h3>
-                <p className="text-gray-400 text-xs md:text-sm">440-412-6300</p>
+                <p className="text-gray-400 text-xs md:text-sm">614-636-2591</p>
               </CardContent>
             </Card>
           </div>
