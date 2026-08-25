@@ -16,7 +16,7 @@ export function Contact() {
       id="contact"
       index="04"
       title="contact"
-      kicker="Seeking early-stage startup roles. The 30-minute link is the fastest way in."
+      kicker="Seeking work that excites me. The 30-minute link is the fastest way in."
     >
       <div className="grid gap-px overflow-hidden rounded-lg border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
         {CHANNELS.map((c) => {
@@ -64,7 +64,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-5xl flex-col gap-3 px-5 py-8 text-[11px] text-faint sm:flex-row sm:items-center sm:justify-between sm:px-8">
         <p>© {new Date().getFullYear()} Uzair Beg — built with Next.js, typed by hand.</p>
         <p className="text-term/60">
-          {'{ "status": "open_to_early_stage", "response_time": "< 24h" }'}
+          {'{ "status": "open_to_work", "response_time": "< 24h" }'}
         </p>
       </div>
     </footer>

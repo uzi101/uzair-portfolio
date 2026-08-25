@@ -16,7 +16,7 @@ const sans = Geist({
 });
 
 const description =
-  "Systems and applied AI engineer. Payments infrastructure at JPMorgan Chase, edge inference at the NSF ICICLE AI Institute, agent infrastructure at MultAI, and Linux kernel work on io_uring. Three-time founder. CS @ Ohio State. Seeking early-stage startup roles.";
+  "Systems and applied AI engineer. Payments infrastructure at JPMorgan Chase, edge inference at the NSF ICICLE AI Institute, agent infrastructure at MultAI, and Linux kernel work on io_uring. Three-time founder. CS @ Ohio State. Open to new software engineering roles.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.uzairbeg.com"),

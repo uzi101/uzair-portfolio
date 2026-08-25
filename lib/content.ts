@@ -17,7 +17,7 @@ export const profile = {
   handle: "uzi101",
   role: "Systems & Applied AI Engineer",
   location: "SF",
-  status: "Seeking early-stage startup roles",
+  status: "Seeking work that excites me",
   tagline:
     "I build the stuff that has to be fast and can't fall over. Payments at JPMorgan, edge inference at an NSF lab, agent infrastructure at MultAI, and lately the Linux kernel.",
   email: "uzairbeg11@gmail.com",

@@ -18,7 +18,7 @@ const LINES: Line[] = [
   { text: "harvest-inference/          multai/", tone: "dim" },
   { text: "", tone: "dim" },
   { text: "$ ./status --availability", tone: "cmd" },
-  { text: "● seeking early-stage startup roles", tone: "ok" },
+  { text: "● seeking work that excites me", tone: "ok" },
 ];
 
 const TONE: Record<Line["tone"], string> = {
