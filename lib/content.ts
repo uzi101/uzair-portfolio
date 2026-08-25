@@ -278,5 +278,5 @@ export const now = [
 export const about = [
   "I'm finishing CS at Ohio State in December. Most of what I've built sits under the product — a payments path that couldn't take another failure domain, an inference pipeline with 8 GB to work with, an agent runtime that has to check its own work.",
   "I like problems where the honest answer is a tradeoff. The best thing I shipped at JPMorgan was a service I talked myself out of building.",
-  "Outside that I lift, play soccer, and put an unreasonable number of hours into poker.",
+  "Outside that: lifting, soccer, and unreasonable hours of poker \u2660 (net negative, thanks for asking).",
 ];
