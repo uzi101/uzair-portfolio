@@ -120,7 +120,7 @@ export const experience: Experience[] = [
     },
     bullets: [
       "Architected a multi-tenant **FastAPI** and **PostgreSQL** platform with **RBAC** and per-clinic data isolation for clinical records, migrating the system off **Firestore** and taking the backend zero to production as founding engineer at a four-person startup.",
-      "Built a two-tier caching layer combining an in-process **LRU** cache with **Redis** in front of vector-embedding and patient-record lookups, cutting database reads by **~65%**.",
+      "Built a two-tier caching layer combining an in-process **LRU** cache with **Redis**, alongside **SQL** query optimization over vector embeddings and **PostgreSQL** patient data, cutting database queries by **~65%**.",
       "Shipped an asynchronous **WebSocket** layer on **FastAPI** with connection pooling and **Firebase** authentication, sustaining **200+** concurrent sessions under **200ms**.",
       "Engineered the documentation pipeline around two hard API ceilings — **Whisper** transcription chunked past the 25 MB upload cap, **GPT-4o** SOAP notes with map-reduce fallback beyond the context window, and **FAISS**-backed retrieval chat.",
       "Onboarded **20+ veterinary clinics**; vets reported saving **~2 hours a day** on charting and several took on **~10% more patients** per month.",
