@@ -32,7 +32,7 @@ export const profile = {
 export const stats = [
   { value: "50+", label: "engineers on Devvy daily", note: "internal, JPMC" },
   { value: "~93%", label: "less migration effort", note: "Chase payment teams" },
-  { value: "10+", label: "clinics running Paws AI", note: "founding engineer" },
+  { value: "20+", label: "clinics running Paws AI", note: "founding engineer" },
 ] as const;
 
 export type Experience = {
@@ -97,12 +97,12 @@ export const experience: Experience[] = [
     summary: "Core Payments Infrastructure. Every Chase payment routes through it — Zelle, wires, all of it.",
     call: {
       headline: "Deleted the service I proposed",
-      body: "I pitched a connector microservice and prototyped it on EC2. Benchmarked it: HTTP serialization was pure overhead. gRPC was faster, still not free. The layer only did stateless validation — so a network hop bought nothing and added a failure domain to a path that had to hold 99.9%. I made it a library instead.",
+      body: "I pitched a connector microservice and prototyped it on EC2. Benchmarked it: HTTP serialization was pure overhead. gRPC was faster, still not free. The layer only did stateless validation — so a network hop bought nothing and added a failure domain to a path that had to hold 99.99%. I made it a library instead.",
     },
     bullets: [
       "Architected a distributed middleware abstraction decoupling legacy **Core Payment Systems** from the new **Payment Instruction Manager**, shipped as a shared **Java** library that teams link directly into their codebase — handling validation, request transformation, and PIM compatibility in-process across dozens of dependent services, cutting cross-team migration effort **~93%**.",
       "Prototyped and benchmarked the alternatives first: a **Spring Boot** connector microservice on **AWS EC2**, then **gRPC** over **HTTP/2** with **Protobuf** serialization, measured against a mock Create Transaction path and rejected on serialization and network overhead.",
-      "Held **sub-100ms** latency and **99.9%** availability targets across **Zelle** and wire transfer flows, with invalid requests failing fast before ever reaching the core system.",
+      "Held **sub-100ms** latency and **99.99%** availability targets across **Zelle** and wire transfer flows, with invalid requests failing fast before ever reaching the core system.",
       "Became the standard integration path for payment teams onboarding to PIM, and removed per-team infrastructure cost entirely.",
     ],
     stack: ["Java", "Spring Boot", "gRPC", "Protobuf", "AWS"],
@@ -119,13 +119,13 @@ export const experience: Experience[] = [
       body: "Whisper caps uploads at 25 MB and real appointments blow past it. GPT-4o's context couldn't hold a long oncology case. Chunking fixed the first, map-reduce the second.",
     },
     bullets: [
-      "Architected multi-tenant **FastAPI** services on **Firestore** with **RBAC** and per-clinic data isolation for clinical records, taking the backend zero to production as founding engineer at a four-person startup.",
+      "Architected a multi-tenant **FastAPI** and **PostgreSQL** platform with **RBAC** and per-clinic data isolation for clinical records, migrating the system off **Firestore** and taking the backend zero to production as founding engineer at a four-person startup.",
       "Built a two-tier caching layer combining an in-process **LRU** cache with **Redis** in front of vector-embedding and patient-record lookups, cutting database reads by **~65%**.",
-      "Shipped an asynchronous **WebSocket** layer on **FastAPI** with connection pooling and **Firebase** authentication, sustaining **300+** concurrent sessions under **200ms**.",
+      "Shipped an asynchronous **WebSocket** layer on **FastAPI** with connection pooling and **Firebase** authentication, sustaining **200+** concurrent sessions under **200ms**.",
       "Engineered the documentation pipeline around two hard API ceilings — **Whisper** transcription chunked past the 25 MB upload cap, **GPT-4o** SOAP notes with map-reduce fallback beyond the context window, and **FAISS**-backed retrieval chat.",
-      "Onboarded **10+ veterinary clinics**; vets reported saving **~2 hours a day** on charting and several took on **~10% more patients** per month.",
+      "Onboarded **20+ veterinary clinics**; vets reported saving **~2 hours a day** on charting and several took on **~10% more patients** per month.",
     ],
-    stack: ["Python", "FastAPI", "Firestore", "Redis", "WebSockets", "Whisper", "GPT-4o", "FAISS"],
+    stack: ["Python", "FastAPI", "PostgreSQL", "Redis", "WebSockets", "Whisper", "GPT-4o", "FAISS"],
   },
   {
     company: "Snap Inc.",
