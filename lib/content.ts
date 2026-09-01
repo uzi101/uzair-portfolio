@@ -115,8 +115,8 @@ export const experience: Experience[] = [
     logo: { mark: "PAW", tint: "#4ECDC4" },
     summary: "Vet documentation platform. Four-person startup, zero to production. I owned the backend.",
     call: {
-      headline: "Both hard limits were API limits",
-      body: "Whisper caps uploads at 25 MB and real appointments blow past it. GPT-4o's context couldn't hold a long oncology case. Chunking fixed the first, map-reduce the second.",
+      headline: "The cache was a symptom",
+      body: "Firestore bills per document read and can't join, so one patient-history view fanned out into dozens of reads. I put an LRU and Redis in front of it and cut queries 65%. That worked, but I was caching around a data model that couldn't express the query — so I moved us to Postgres, where one query replaced the fanout and per-clinic isolation lived in row-level security instead of a rules file I couldn't test.",
     },
     bullets: [
       "Architected a multi-tenant **FastAPI** and **PostgreSQL** platform with **RBAC** and per-clinic data isolation for clinical records, migrating the system off **Firestore** and taking the backend zero to production as founding engineer at a four-person startup.",
